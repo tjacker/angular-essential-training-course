@@ -1,3 +1,6 @@
+import { Injectable } from '@angular/core';
+
+@Injectable({ providedIn: 'root' })
 export class MediaItemService {
   mediaItems = [
     {
@@ -7,7 +10,7 @@ export class MediaItemService {
       category: 'Science Fiction',
       year: 2010,
       watchedOn: 1294166565384,
-      isFavorite: false
+      isFavorite: false,
     },
     {
       id: 2,
@@ -16,32 +19,35 @@ export class MediaItemService {
       category: 'Comedy',
       year: 2015,
       watchedOn: null,
-      isFavorite: true
-    }, {
+      isFavorite: true,
+    },
+    {
       id: 3,
       name: 'The Redemption',
       medium: 'Movies',
       category: 'Action',
       year: 2016,
       watchedOn: null,
-      isFavorite: false
-    }, {
+      isFavorite: false,
+    },
+    {
       id: 4,
       name: 'Hoopers',
       medium: 'Series',
       category: 'Drama',
       year: null,
       watchedOn: null,
-      isFavorite: true
-    }, {
+      isFavorite: true,
+    },
+    {
       id: 5,
       name: 'Happy Joe: Cheery Road',
       medium: 'Movies',
       category: 'Action',
       year: 2015,
       watchedOn: 1457166565384,
-      isFavorite: false
-    }
+      isFavorite: false,
+    },
   ];
 
   get() {
